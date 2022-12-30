@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print bill amount</title>
+    <style>
+        .form{
+            width:50%;
+            margin:auto;
+        }
+        label{
+            width:50%;
+        }
+        input{
+            width:50%; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center;">bill amount task</h1>
+        <div class="form">
+            <fieldset>
+
+                <div style="display:flex;">
+                    <label for="price">bill amount:</label>
+                    <input type="number" id="price" placeholder="Enter the price amount " ><br>
+                </div>
+
+                <div style="display:flex; margin-top: 10px;">
+                    <label for="tips">tips:</label>
+                    <input type="number" id="tips" placeholder="Enter the tips"><br>
+                </div>
+
+                <div style="display:flex; margin-top: 10px;">
+                    <label for="rupee">tips-rupee:</label>
+                    <input type="number" id="rupee" disabled placeholder="Enter the tips rupee"><br>
+                </div>
+
+                <div style="display:flex; margin-top: 10px;">
+                    <label for="total">total bill amount:</label>
+                    <input type="number" id="total" disabled placeholder="Enter the total amount"><br>
+                </div>
+                <div style="text-align:center;  margin-top: 20px;"> 
+                    <button onclick="Time()" >submitt</button>
+                </div>
+            </fieldset>
+        </div>
+        <p id="con" style="text-align:center;"></p>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
